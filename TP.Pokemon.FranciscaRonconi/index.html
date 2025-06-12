@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Batalla de Pokemones</h1>
+     <div class="equipos">
+            <div id="stats_equipoA" class="statsA">
+                <h3>Equipo A</h3>
+                <div  id="tirarDadosA"></div>
+                <button class="tirardados" id="dadosA" onClick="tirarDadosA()">Tirar dados</button>
+                <div id="valordadoA"></div>
+                <div id="equipoA" class="equipo">
+                </div>
+            </div>
+
+            <div id="vs" class="vs">
+                <h1>VS</h1>
+                <button id='comenzarBatalla'disabled value='${ataqueEquipo1},${ataqueEquipo2},${defensaEquipo1},${defensaEquipo2}'
+                onClick="iniciarBatalla(this.value)">Iniciar Batalla</button>
+            </div>
+
+            <div id="stats_equipoB" class="statsB">
+                <h3>Equipo B</h3>
+                <div  id="tirarDadosB"></div>
+                <button class="tirardados" id="dadosB" onClick="tirarDadosB()">Tirar dados</button>
+                <div id="valordadoB"></div>
+                <div id="equipoB" class="equipo"></div>
+            </div>
+     </div>
+     <div class="ganador" id="ganador"></div>
+</body>
+    <script src="./JS/fn.JS"></script>
+    <link rel="stylesheet" href="CSS/style.CSS">
+</html>
